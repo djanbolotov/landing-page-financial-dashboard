@@ -1,0 +1,433 @@
+*{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    font-family: Quicksand, serif;
+}
+
+.container{
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+img{
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    color: rgba(15, 66, 100, 1);
+}
+
+.menu__item{
+    display: flex;
+    color: rgba(199, 199, 199, 1);
+}
+
+.menu__item:hover{
+    background-color: rgba(240, 247, 255, 1);
+    color: rgba(25, 123, 189, 1);
+}
+
+.upgrade{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.upgrade > *{
+    margin-bottom: 1rem;
+}
+
+.upgrade__button button{
+    display: flex;
+}
+
+.information__item2 > *{
+    margin-bottom: 3.5rem;
+}
+
+.transaction-poster{
+    margin-bottom: 0;
+}
+
+.information__item1 > *{
+    margin-bottom: 1rem;
+}
+
+.information__item2{
+    margin-left: 2rem;
+}
+
+.navbar-information{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.navbar{
+    border-right: solid 1px rgba(199, 199, 199, 1);
+    display: flex;
+    flex-direction: column;
+    padding-right: 1rem;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    height:90vh;
+}
+
+.menu > *{
+    margin-bottom: 0.5rem;
+}
+
+.menu__image, .logo__image{
+    margin-right: 1rem;
+}
+
+.upgrade p{
+    font-size: 0.87rem;
+    text-align: center;
+}
+
+.upgrade__button button{
+    padding: 0.9rem;
+    border-width: 0;
+    background: rgba(255, 193, 69, 1);
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.user__items{
+    display: flex;
+}
+
+.user__items > *{
+    margin-right: 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.user__image{
+    border-radius: 50%;
+    background-color: yellow;
+}
+
+.information{
+    padding: 0 2rem 0 1rem;
+}
+
+.card-slider{
+    display: flex;
+}
+
+.card-slider > *{
+    margin-right: 1rem;
+}
+
+.main-card{
+    background-color: rgba(51, 145, 208, 1);
+    padding: 1rem 3rem 1rem 2rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.main-card > h2{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.user-card{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    display: flex;
+}
+
+.seperator{
+    border:rgba(199, 199, 199, 1) solid 1px;
+    height: 14rem;
+}
+
+.prices > *{
+    margin: 2rem;
+    margin-top: 0;
+    text-align: right;
+}
+
+.price p{
+    color:rgba(199, 199, 199, 1);
+}
+
+.price h2{
+    color: rgba(51, 145, 208, 1);
+}
+
+.price h3{
+    color: green;
+}
+
+.price h4{
+    color: red;
+}
+
+.card-range {
+    width: 20rem;
+    margin-top: 2rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 3.2rem;
+    height: 1.5rem;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 1.5rem;
+    width: 1.5rem;
+    left: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 3rem;
+  }
+  
+  .slider.round:before {
+    border-radius: 1rem;
+  }
+
+  .cards h2{
+      margin-bottom: 0rem !important;
+  }
+
+  .cards, .transaction-table{
+      padding: 1rem;
+      border-radius: 2rem;
+      box-shadow: 0 14px 28px rgba(238, 239, 242, 1), 0 10px 10px rgba(238, 239, 242, 1);
+  }
+
+  .truck{
+      width: 7%;
+  }
+
+  table{
+      text-align-last: left;
+      border-spacing: 2rem 1rem;
+      margin-left: -1rem !important;
+  }
+
+  .row-image{
+    display: flex;
+    width: 12rem;
+  }
+
+  th{
+      color:rgba(199, 199, 199, 1);
+  }
+
+  .unactive{
+      color:rgba(199, 199, 199, 1);
+  }
+
+  .goals__title{
+      display: flex;
+  }
+
+  .goals__item{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: start;
+      box-shadow: 0 14px 28px rgba(238, 239, 242, 1), 0 10px 10px rgba(238, 239, 242, 1);
+      padding: 1rem;
+      border-radius: 1rem;
+      width: 8rem;
+  }
+
+  .goals__item > p{
+      margin-bottom: 2rem;
+  }
+
+  .goals__items{
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .outcome-statistics__item{
+      display: flex;
+      justify-content: space-between;
+      margin: 1rem;
+  }
+
+  .truck1{
+      width: 3%;
+  }
+
+  .information-items{
+      display: flex;
+      align-items: start;
+      justify-content: space-around;
+  }
+
+  .new-transaction__users{
+      display: flex;
+  }
+
+  .new-transaction__users > *{
+      margin-right: 1rem;
+  }
+
+  .circle{
+      width: 50%;
+      margin-left: 1rem;
+  }
+
+  .send-transaction{
+      display: flex;
+  }
+
+  .new-transaction{
+    box-shadow: 0 14px 28px rgba(238, 239, 242, 1), 0 10px 10px rgba(238, 239, 242, 1);
+    border-radius: 1rem;
+    padding: 1rem;
+    margin-right: 1rem;
+  }
+
+  .get-great-loan{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      position: relative;      
+  }
+
+
+
+  .burger div{
+      width: 1.5rem;
+      border: black solid 1px;
+      margin-bottom: 0.5rem;
+      display: none;
+  }
+
+  .get-great-loan img{
+    background-color: rgb(201, 63, 8, 0.8);
+    border-radius: 1rem;
+  }
+
+  .get-great-loan h2{
+      position: absolute;
+      bottom: 0.5rem;
+      color: white;
+  }
+
+  .transaction-poster{
+      display: flex;
+  }
+
+  @media (max-width: 1200px) {
+    .information-items{
+        flex-wrap: wrap;
+    }
+    .information__item1{
+        margin-left: 0;
+    }
+    .navbar{
+        padding: 1rem;
+    }
+    .information{
+        padding: 0;
+    }
+    .goals__items{
+        flex-wrap: wrap;
+    }
+  }
+
+  a{
+      text-decoration: none;
+  }
+  .hide{
+      display: none;
+  }
+
+  @media (max-width: 900px) {
+      .navbar{
+          display: none;
+      }
+      .container{
+          padding: 1rem;
+      }
+      .burger div{
+          display: inherit;
+      }
+  }
+
+  @media (max-width: 550px) {
+      table{
+        border-spacing: 0;
+        margin: 0 !important;
+        width: 100%;
+      }
+      .transaction-table{
+          padding: 0;
+          padding-left: 0.5rem;
+          width: 90vw;
+      }
+      .transaction-poster{
+          flex-wrap: wrap;
+      }
+      .seperator{
+          display: none;
+      }
+      .card{
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+      .information__item2{
+          margin-left: 0;
+      }
+      .row-image{
+          width: min-content;
+      }
+  }

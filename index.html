@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar-information">
+            <div id="navbar" class="navbar">
+                <div class="logo">
+                    <div class="logo__image">
+                        <img src="./assets/images/cloud.png" alt="cloud">
+                    </div>
+                    <h3>cloudcash</h3>
+                </div>
+                <div class="menu">
+                    <div class="menu__item">
+                        <div class="menu__image">
+                            <img src="./assets/images/overview.png" alt="overview">
+                        </div>
+                        <p>Overview</p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__image">
+                            <img src="./assets/images/transactions.png" alt="transactions">
+                        </div>
+                        <p><a href="#transactions">Transactions</a></p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__image">
+                            <img src="./assets/images/cards.png" alt="cards">
+                        </div>
+                        <p><a href="#cards">Cards</a></p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__image">
+                            <img src="./assets/images/invoices.png" alt="invoices">
+                        </div>
+                        <p><a href="#invoices">Invoices</a></p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__image">
+                            <img src="./assets/images/goals.png" alt="goals">
+                        </div>
+                        <p><a href="#goals">Goals</a></p>
+                    </div>
+                    <div class="menu__item">
+                        <div class="menu__image">
+                            <img src="./assets/images/settings.png" alt="settings">
+                        </div>
+                        <p><a href="#settings">Settings</a></p>
+                    </div>
+                </div>
+                <div class="upgrade">
+                    <div class="upgrade__image">
+                        <img src="./assets/images/upgrade-to-premium.png" alt="upgrade">
+                    </div>
+                    <p>Give your money awesome space in cloud</p>
+                    <div class="upgrade__button">
+                        <button>Upgrade to premium <div><img src="./assets/images/up.png" alt="up"></div></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="information">
+                <header>
+                    <div class="header__info">
+                        <div class="header__title">
+                            <div class="burger">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                            <h1>Weekly sumup</h1>
+                        </div>
+                        <div class="header__text">
+                            <p>Get summary of your weekly online transactions here.</p>
+                        </div>
+                    </div>
+                    <div class="user__items">
+                        <div class="user__mail">
+                            <img src="./assets/images/mail.png" alt="mail">
+                        </div>
+                        <div class="user__bell">
+                            <img src="./assets/images/bell.png" alt="bell">
+                        </div>
+                        <div class="user__image">
+                            <img src="./assets/images/andrew.png" alt="user">
+                        </div>
+                        <div class="user__info">
+                            <h4>Andrew</h4>
+                            <p>Admin account</p>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="information-items">
+                    <div class="information__item1">
+                        <div class="cards">
+                            <h2 id="cards">Cards</h2>
+                            <div class="card">
+                                <div>
+                                    <div class="card-slider">
+                                        <div class="slider-left">
+                                            <img src="./assets/images/blue-left.png" alt="blue-left">
+                                        </div>
+                                        <div class="main-card">
+                                            <div class="card-info">
+                                                <h3>cloudcash</h3>
+                                                <p>PREMIUM ACCOUNT</p>
+                                            </div>
+                                            <h2>5789 * * * * * * * * 2847</h2>
+                                            <div class="user-card">
+                                                <div class="card-holder">
+                                                    <p>Card holder</p>
+                                                    <h4>Mike Smith</h4>
+                                                </div>
+                                                <div class="expire-date">
+                                                    <p>Expire date</p>
+                                                    <h4>06/21</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slider-right">
+                                            <img src="./assets/images/blue-right.png" alt="blue-right">
+                                        </div>
+                                    </div>
+                                    <input type="range" min="1" max="100" value="20" class="card-range">
+                                </div>
+                                <div class="seperator"></div>
+                                <div>
+                                    <div class="prices">
+                                        <div class="price">
+                                            <h2>$ 2850.75</h2>
+                                            <p>Current balance</p>
+                                        </div>
+                                        <div class="price">
+                                            <h3>$ 1500.50</h3>
+                                            <p>Income</p>
+                                        </div>
+                                        <div class="price">
+                                            <h4>$ 350.60</h4>
+                                            <p>Outcome</p>
+                                        </div>
+                                        <div class="price">
+                                            <label class="switch">
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </label>
+                                            <p>Deactivate card</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="transaction-table">
+                            <div class="transaction-table__title">
+                                <h2 id="transactions">Transaction history</h2>
+                            </div>
+                            <table>
+                                <tr class="transaction-table__headings">
+                                    <th>Receiver</th>
+                                    <th>Type</th>
+                                    <th>Date</th>
+                                    <th>Amount</th>
+                                </tr>
+                                <tr class="transaction-table__row">
+                                    <td>
+                                        <div class="row-image">
+                                            <div class="menu__image">
+                                                <img src="./assets/images/shopping.png" alt="shopping">
+                                            </div>
+                                            <p>Tesco Market</p>
+                                        </div>
+                                    </td>
+                                    <td class="unactive">Shopping</td>
+                                    <td class="unactive">13 Dec 2020</td>
+                                    <td>
+                                        <strong>$75.67</strong>
+                                    </td>
+                                </tr>
+                                <tr class="transaction-table__row">
+                                    <td>
+                                        <div class="row-image">
+                                            <div class="menu__image truck">
+                                                <img src="./assets/images/truck.png" alt="truck">
+                                            </div>
+                                            <p>ElectroMen Market</p>
+                                        </div>
+                                    </td>
+
+                                    <td class="unactive">Shopping</td>
+                                    <td class="unactive">14 Dec 2020</td>
+                                    <td>
+                                        <strong>$250.00</strong>
+                                    </td>
+                                </tr>
+                                <tr class="transaction-table__row">
+                                    <td>
+                                        <div class="row-image">
+                                            <div class="menu__image">
+                                                <img src="./assets/images/restaurant.png" alt="restaurant">
+                                            </div>
+                                            <p>Fiorigo Restaurant</p>
+                                        </div>
+                                    </td>
+
+                                    <td class="unactive">Food</td>
+                                    <td class="unactive">07 Dec 2020</td>
+                                    <td>
+                                        <strong>$19.50</strong>
+                                    </td>
+                                </tr>
+                                <tr class="transaction-table__row">
+                                    <td>
+                                        <div class="row-image">
+                                            <div class="menu__image">
+                                                <img src="./assets/images/user-icon.png" alt="user">
+                                            </div>
+                                            <p>John Mathew Kayne</p>
+                                        </div>
+                                    </td>
+                                    <td class="unactive">Sport</td>
+                                    <td class="unactive">06 Dec 2020</td>
+                                    <td>
+                                        <strong>$350</strong>
+                                    </td>
+                                </tr>
+                                <tr class="transaction-table__row">
+                                    <td>
+                                        <div class="row-image">
+                                            <div class="menu__image">
+                                                <img src="./assets/images/user-icon.png" alt="user">
+                                            </div>
+                                            <p>Ann Marlin</p>
+                                        </div>
+                                    </td>
+                                    <td class="unactive">Shopping</td>
+                                    <td class="unactive">31 Now 2020</td>
+                                    <td>
+                                        <strong>$430</strong>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="information__item2">
+                        <div class="goals">
+                            <div class="goals__title">
+                                <h2 id="goals">Goals</h2>
+                                <div class="plus-image">
+                                    <img src="./assets/images/plus-circle.png" alt="plus-circle">
+                                </div>
+                            </div>
+                            <div class="goals__items">
+                                <div class="goals__item">
+                                    <h2>$550</h2>
+                                    <p>12/20/20</p>
+                                    <div>
+                                        <img src="./assets/images/mountain.png" alt="mountain">
+                                    </div>
+                                    <h2>Holidays</h2>
+                                </div>
+                                <div class="goals__item">
+                                    <h2>$200</h2>
+                                    <p>12/20/20</p>
+                                    <div>
+                                        <img src="./assets/images/renavation.png" alt="renavation">
+                                    </div>
+                                    <h2>Renavation</h2>
+                                </div>
+                                <div class="goals__item">
+                                    <h2>$820</h2>
+                                    <p>12/20/20</p>
+                                    <div>
+                                        <img src="./assets/images/xbox.png" alt="xbox">
+                                    </div>
+                                    <h2>Xbox</h2>
+                                </div>
+                                <div class="slider-right">
+                                    <img src="./assets/images/blue-right.png" alt="blue-right">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="outcome-statistics">
+                            <div class="outcome-statistics__title">
+                                <h2 id="invoices">Outcome Statistics</h2>
+                            </div>
+                            <div class="outcome-statistics__item">
+                                <div class="outcome-statistics__icon">
+                                    <img src="./assets/images/shopping.png" alt="shopping">
+                                </div>
+                                <div class="outcome-statistics__range">
+                                    <input type="range" max="100" min="1" value="52">
+                                </div>
+                                <div class="outcome-statistics__persentage">
+                                    <h2>52%</h2>
+                                </div>
+                            </div>
+                            <div class="outcome-statistics__item">
+                                <div class="outcome-statistics__icon truck1">
+                                    <img src="./assets/images/truck.png" alt="truck">
+                                </div>
+                                <div class="outcome-statistics__range">
+                                    <input type="range" max="100" min="1" value="21">
+                                </div>
+                                <div class="outcome-statistics__persentage">
+                                    <h2>21%</h2>
+                                </div>
+                            </div>
+                            <div class="outcome-statistics__item">
+                                <div class="outcome-statistics__icon">
+                                    <img src="./assets/images/travels.png" alt="travels">
+                                </div>
+                                <div class="outcome-statistics__range">
+                                    <input type="range" max="100" min="1" value="74">
+                                </div>
+                                <div class="outcome-statistics__persentage">
+                                    <h2>74%</h2>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="transaction-poster">
+                            <div class="new-transaction">
+                                <div class="new-transaction__title">
+                                    <h2>New transaction</h2>
+                                </div>
+                                <div class="new-transaction__users">
+                                    <div class="user">
+                                        <div class="new-transaction__user-icon">
+                                            <img src="./assets/images/user1.png" alt="user">
+                                        </div>
+                                        <p>Ann</p>
+                                    </div>
+                                    <div class="user">
+                                        <div class="new-transaction__user-icon">
+                                            <img src="./assets/images/user2.png" alt="user">
+                                        </div>
+                                        <p>Monica</p>
+                                    </div>
+                                    <div class="user">
+                                        <div class="new-transaction__user-icon">
+                                            <img src="./assets/images/user3.png" alt="user">
+                                        </div>
+                                        <p>John</p>
+                                    </div>
+                                    <div class="user">
+                                        <div class="new-transaction__user-icon">
+                                            <img src="./assets/images/user4.png" alt="user">
+                                        </div>
+                                        <p>Mike</p>
+                                    </div>
+                                    <div class="user">
+                                        <div class="new-transaction__user-icon">
+                                            <img src="./assets/images/user5.png" alt="user">
+                                        </div>
+                                        <p>Mia</p>
+                                    </div>
+                                    <div class="user">
+                                        <div class="new-transaction__user-icon circle">
+                                            <img src="./assets/images/plus-circle.png" alt="user">
+                                        </div>
+                                        <p>Add new</p>
+                                    </div>
+                                </div>
+                                <div class="send-transaction">
+                                    <div class="send-transaction__input">
+                                        <input type="text">
+                                    </div>
+                                    <div class="upgrade__button">
+                                        <button>Send the transfer</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="get-great-loan">
+                                <div class="get-great-loan__image">
+                                    <img src="./assets/images/great-loan.png" alt="great-loan">
+                                </div>
+                                <h2 id="settings">
+                                    Get great <br> loan
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
