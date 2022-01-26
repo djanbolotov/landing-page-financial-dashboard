@@ -404,6 +404,10 @@ header{
   }
 
   @media (max-width: 550px) {
+      *{
+          margin-left: 0;
+          margin-right: 0;
+      }
       table{
         border-spacing: 0;
         margin: 0 !important;
